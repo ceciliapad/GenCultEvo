@@ -1,0 +1,66 @@
+﻿Trait,Culture,Hunting bow::length(cm),Hunting bow:shape,Hunting bow::decoration,Hunting bow::excesstringrolled,Hunting bow::pointyends,Hunting bow::diameter,Huntingbow::attachment
+AKA-CAR-13,Aka,40,boat,littlecrosses,1,0,3,holeknot
+AKA-CAR-69,Aka,50,boat,0,0,1,2,NA
+AKA-CAR-74,Aka,50,boat,0,1,1,4,holeknot
+BAB-GAB-06,Babongo,40,boat,0,0,0,3,holeknot
+BAK-CAM-65,Baka,50,boat,0,NA,0,2,holeknot
+BAK-CAM-66,Baka,40,boat,0,0,0,2,pointknot
+BAK-CAM-66,Baka,50,boat,rims,0,0,2.5,holeknot
+BAT-RWA-01,Batwa (East),120,boat,0,1,1,4,holeknot
+BAT-RWA-03,Batwa (East),120,boat,0,0,0,4,holeknot
+BAT-UGA-01,Batwa (East),120,boat,0,1,1,4,holeknot
+BAT-UGA-04,Batwa (East),120,edgedboat,0,1,1,3,holeknot
+BAT-UGA-06,Batwa (East),120,boat,0,1,0,3,holeknot
+BAT-UGA-09,Batwa (East),120,boat,0,0,0,3,knotpaste
+BED-CAM-09,Bedzan,150,boat,0,1,0,5,NA
+BED-CAM-20,Bedzan,180,boat,0,0,0,3,holeknot
+BED-CAM-20,Bedzan,180,boat,0,0,0,3,holeknot
+EFE-DRC-01,Efe,40,boat,0,0,0,2.5,holeknot
+EFE-DRC-01,Efe,40,edgedboat,0,0,0,2.5,holeknot
+EFE-DRC-01,Efe,40,boat,0,0,0,2.5,holeknot
+EFE-DRC-01,Efe,40,boat,0,0,0,2.5,holeknot
+EFE-DRC-01,Efe,40,boat,0,0,0,2.5,holeknot
+EFE-DRC-03,Efe,60,flatboat,0,0,0,2,holeknot
+EFE-DRC-05,Efe,90,boat,0,0,0,2.5,holeknot
+EFE-DRC-06,Efe,90,boat,fur,0,0,2.5,holeknot
+EFE-DRC-13,Efe,90,boat,0,0,0,3,NA
+EFE-DRC-15,Efe,100,boat,0,0,0,3,NA
+EFE-DRC-20,Efe,NA,boat,0,0,0,2.5,holeknot
+EFE-DRC-24,Efe,60,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,60,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-25,Efe,90,boat,0,0,0,2.5,NA
+EFE-DRC-33,Efe,80,boat,0,0,0,3,holeknot
+SUA-DRC-07,Sua,60,boat,fur,0,0,3,holeknot
+SUA-DRC-08,Sua,60,boat,fur,0,0,4,holeknot
+SUA-DRC-09,Sua,65,boat,0,0,0,4,holeknot
+SUA-DRC-18,Sua,50,boat,0,0,0,3,holeknot
+CWA-DRC-09,Batwa (West),110,flatboat,0,0,0,3,holeknot
+CWA-DRC-11,Batwa (West),150,flatboat,0,0,0,4,holeknot
+;BU=4,Sua,80,boat,plantrim,0,0,2,holeknot
+BAT_23,Batwa (West),150,boat,feathers,1,1,4,holeknot
+BAT_66,Batwa (West),120,boat,NA,1,1,6,holeknot
+BAT_67,Batwa (West),120,boat,NA,1,1,6,holeknot
+BAT-06,Batwa (East),150,NA,rolledfibres,1,0,5,holeknot
+BAT-07,Batwa (East),160,boat,rolledfibres,NA,NA,5,holeknot
+BAT-07,Batwa (East),160,boat,0,0,0,4,holeknot
+BAT-07,Batwa (East),160,boat,rolledfibres,1,0,6,holeknot
+BIA_3,Batwa (West),140,boat,0,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,0,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,0,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,NA,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,NA,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,NA,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,NA,NA,NA,NA,NA
+BIA_3,Batwa (West),140,boat,NA,NA,NA,NA,NA
+EFE_1,Sua,40,NA,0,0,0,2,holeknot
+EPULU-1,Sua,NA,boat,NA,NA,NA,3.5,NA
+MBU-20,Sua,NA,NA,coating,0,0,2,holeknot
+TWA_23,Batwa (West),50,boat,0,NA,0,4,holeknot
+TWA_29,Batwa (East),NA,flatboat,0,1,1,5,holeknot

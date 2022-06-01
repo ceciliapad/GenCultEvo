@@ -1,0 +1,27 @@
+﻿Trait,Culture,Zitherharp::strings,Zitherharp::stringmaterial,Zitherharp::material,Zitherharp::resonancetechnique,Zitherharp::resonanceboxmaterial,Zitherharp::shape,Zitherharp::middlepartition,Zitherharp::sidelength(cm),Zitherharp::type
+AKA-CAR-28,Aka,3,vanilla,wood,box,metal,triangular,1,40,normal
+AKA-CAR-68,Aka,3,NA,wood,box,metal,triangular,1,40,normal
+AKA-CAR-81,Aka,3,NA,wood,box,metal,triangular,1,40,normal
+AKA-CAR-82,Aka,3,NA,wood,bucket,plastic,triangular,1,160,normal
+BAK-CAM-04,Baka,4,cable,raphia,board,raphia,rectangular,1,200,normal
+BAK-CAM-24,Baka,4,cable,raphia,board,board,rectangular,1,200,normal
+BAK-CAM-37,Baka,4,cable,raphia,board,board,rectangular,1,200,normal
+BAK-CAM-51,Baka,4,cable,raphia,board,board,rectangular,1,200,normal
+BAK-CAM-59,Baka,4,cable,raphia,board,board,rectangular,1,200,normal
+BAK-CAM-82,Baka,4,cable,wood,board,raphia,rectangular,1,200,normal
+BAK-CAM-83,Baka,4,cable,wood,board,raphia,rectangular,1,200,normal
+BAL-CAM-14,Bakola,3,raphia,wood,board,wood,triangular,0,20,normal
+BAL-CAM-15,Bakola,3,raphia,wood,board,wood,triangular,0,20,normal
+BAY-GAB-09,Bakoya,5,NA,wood,board,wood,rectangular,1,350,normal
+BAY-GAB-09b,Bakoya,5,NA,wood,board,wood,rectangular,1,350,normal
+BAY-GAB-27,Bakoya,5,NA,wood,board,wood,rectangular,1,350,normal
+BED-CAM-06,Bedzan,5,cable,wood,box,pumpkin,round,1,150,normal
+BED-CAM-15,Bedzan,5,cable,wood,box,pumpkin,round,1,150,normal
+BED-CAM-15,Bedzan,5,cable,wood,box,pumpkin,round,1,150,normal
+BED-CAM-17,Bedzan,5,cable,wood,box,pumpkin,round,1,150,normal
+MBE-DRC-14,Mbendjele,3,cable,wood,box,plastic,triangular,1,160,normal
+KAN_16,Sua,7,raphia,wood,0,0,rectangular,sidepartitions,20,trough
+MBU-28,Sua,7,raphia,wood,0,0,rectangular,sidepartitions,20,trough
+MBU-33,Sua,8,raphia,wood,0,0,rectanfular,sidepartitions,25,trough
+TWA_20,Batwa (East),8,NA,wood,0,0,ovalrectangle,0,20,trough
+TWA_51,Batwa (East),NA,10,wood,0,0,ovalrectangle,0,100,trough

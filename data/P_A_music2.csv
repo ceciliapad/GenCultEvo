@@ -1,0 +1,11 @@
+﻿Culture,1StringMusicalbow::presence,2StringMusicalbow::presence,NutBell::presence,OpenBells::presence,BodyBell::presence,RattleBell::presence,ClosedBell::presence,CowBell::presence,ConicalDrum::presence,CylindricalDrum::presence,GobletDrum::presence,DiaboloDrum::presence,SlitDrum::presence,Flute::presence,Panpipe::present,EarthWhistle::presence,WoodWhistle::presence,DuikerWhistle::presence,BambooWhistle::presence,PapayaWhistle::presence,Pumpkinwhistle::presence,SeedWhistle::presence,GrainWhistle::presence,Groundharp::presence,Harp::presence,Zitherharp::presence,Troughzither::presence,Lamellaphone::presence,Rattle::presence,BasketRattle::presence,FibreRattle:presence,Bangingsticks::presence,Struckbeam::presence,Horn::presence,ResonatorHorn::presence,Xylophone::presence,Pluriarc::presence,Scraper::presence,Castanets::present,MachettesMusical::presence,Pipes::presence,PumpkinPercussion::presence,Seedpercussion::presence,SplitBrushbamboo::presence
+Aka,1,1,1,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,1,1,1,1,0,0,1,1,0,1,1,0,0,0,0,0,0,1,0,0,0,0
+Babongo,1,0,0,1,1,1,1,0,1,1,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+Baka,1,1,1,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,1,0,0,0,1,1,1,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+Bakola,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0
+Bakoya,0,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0
+Batwa (East),1,0,0,0,0,0,1,0,1,1,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,1,1,1,1,0,0,0,0,1,1,0,0,1,0,0,0,0,0,0
+Batwa (West),0,0,0,1,0,0,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,1,0,1,0,1,0,0,0,0,0,0
+Bedzan,0,0,0,1,0,0,1,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0,0,0,0,1,0,0
+Efe,1,1,0,0,0,0,0,1,1,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1
+Sua,1,0,0,0,0,0,1,1,NA,NA,0,0,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,1,1,0,0,1,0,1,0,0,0,0,1,0,1,0,0,1

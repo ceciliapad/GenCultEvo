@@ -1,0 +1,11 @@
+﻿Culture,Mace::present,Hoe::present,Fishtrap::presence,Sickle::presence,Machette::presence,Knife::presence,Apecrossbow::presence,Axe::presence,Spear::presence,Gamebasket::presence (noy just for yams),Basket::presence,Filtering basket::presence,Hunting bow::presence,WoodenArrow::presence,MetalArrow::presence,Epapau::presence,Crossbow::presence,Dart::presence,BarkHoney::presence,LeavesHoney::presence,Wearable sac::presence,Hunting net::presence,VineSnare::presence,CableSnare::presence,GlueSnare::presence,Trap::presence,Wooden Auger::presence,Lanceelephant::present,Blowgun::presence,Dam::presence,Fishing Net::presence,Fishing Rod::presence,Fishing Hook::presence,Fishing Nailon:: presence,Pirogue::presence,BarkBeater::presence,FireSpear::presence,Thumper::presence,Diggingstick::presence,HoneyAxe::presence
+Aka,0,0,1,0,1,1,0,0,1,0,1,0,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,1,1
+Babongo,0,0,0,0,1,0,0,1,1,0,1,1,1,1,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Baka,0,0,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,0,1,1,1,0,1,1,1,0,0,0,0,0
+Bakola,0,0,1,0,1,1,0,1,1,0,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+Bakoya,0,0,1,0,1,1,1,1,1,1,1,1,1,0,1,0,1,1,0,0,0,1,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0
+Batwa (East),1,1,1,1,1,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0
+Batwa (West),0,0,1,0,1,1,0,1,1,0,1,0,1,1,1,0,1,1,0,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0
+Bedzan,0,0,0,0,1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,0,0,0,0
+Efe,0,1,1,0,1,1,0,1,1,0,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,1,0,1
+Sua,0,0,1,0,1,1,0,1,1,0,1,0,1,1,1,0,0,0,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,0,0

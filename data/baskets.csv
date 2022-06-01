@@ -1,0 +1,125 @@
+﻿Trait,Culture,Basket::carrymode,Basket::size(cm),Basket::base,Basket::shape,Basket::hanginglace,Basket::handle,Basket::techniqueaddon,Basket::augmentingsticks,Basket::rim,Basket::holes
+AKA-CAR-08,Aka,hold,60,bowl,conical,1,0,0,0,straight,0
+AKA-CAR-15,Aka,wear,NA,bowl,conical,1,0,0,1,hills,0
+AKA-CAR-38,Aka,wear,50,flat,conical,0,0,0,1,NA,0
+AKA-CAR-39,Aka,head,50,point,conical,0,0,0,1,rim,0
+AKA-CAR-51,Aka,head,50,point,conical,1,0,0,0,hills,0
+AKA-CAR-53,Aka,NA,50,flat,barrel,0,0,verticalsticks,0,rim,0
+BAB-GAB-09,Babongo,wear,60,NA,conical,NA,0,0,0,rim,0
+BAB-GAB-10,Babongo,NA,50,flat,cuboidal,0,0,0,NA,NA,0
+BAK-CAM-08,Baka,hold,40,flat,cylindrical,0,0,0,0,rim,0
+BAK-CAM-09,Baka,NA,100,flat,cuboidal,1,0,verticalsticks,0,rim,0
+BAK-CAM-10,Baka,head,30,flat,conical,0,0,0,0,rim,0
+BAK-CAM-14,Baka,NA,30,flat,cylindrical,1,0,0,0,rim,large 
+BAK-CAM-14,Baka,NA,40,flat,cylindrical,1,0,0,0,rim,large 
+BAK-CAM-15,Baka,NA,40,flat,cuboidal,1,0,0,9,rim,0
+BAK-CAM-17,Baka,wear,50,flat,conical,0,0,0,0,rim,large
+BAK-CAM-17,Baka,head,50,NA,conical,1,0,0,0,NA,0
+BAK-CAM-19,Baka,NA,50,flat,conical,1,0,verticalsticks,0,doublerimsticks,0
+BAK-CAM-20,Baka,NA,50,flat,cuboidal,0,0,0,0,NA,0
+BAK-CAM-20,Baka,NA,20,flat,cuboidal,0,0,0,0,rim,0
+BAK-CAM-23,Baka,NA,50,flat,cylindrical,1,0,0,0,rim,0
+BAK-CAM-26,Baka,head,50,flat,conical,0,0,0,0,rim,0
+BAK-CAM-28,Baka,head,50,NA,conical,0,0,0,0,rim,0
+BAK-CAM-35,Baka,head,20,flat,cylindrical,1,0,horizontalsticks,0,rim,large
+BAK-CAM-35,Baka,head,40,flat,cylindrical,1,0,horizontalsticks,0,rim,medium
+BAK-CAM-46,Baka,head,40,bowl,cylindrical,1,0,0,0,rim,0
+BAK-CAM-47,Baka,head,40,flat,cylindrical,1,0,0,0,rim,0
+BAK-CAM-48,Baka,head,50,NA,cylindrical,1,0,verticalticks,0,rim,0
+BAK-CAM-49,Baka,head,50,flat,cylindrical,1,0,verticalticks,0,rim,0
+BAK-CAM-50,Baka,head,50,flat,cylindrical,1,0,verticalticks,0,rim,0
+BAK-CAM-76,Baka,NA,50,flat,cylindrical,1,0,0,0,rim,medium
+BAK-CAM-76,Baka,NA,50,flat,cylindrical,0,0,0,0,rim,medium
+BAK-CAM-76,Baka,NA,50,flat,cylindrical,0,0,0,0,rim,medium
+BAK-CAM-76,Baka,NA,50,flat,cylindrical,0,0,0,0,rim,medium
+BAK-CAM-76,Baka,NA,50,flat,cylindrical,0,0,0,0,rim,medium
+BAL-CAM-01,Bakola,wear,50,flat,widecylynder,1,0,middlerim,0,rim,medium
+BAL-CAM-03,Bakola,hold,30,flat,widecylynder,1,0,NA,0,rim,medium
+BAL-CAM-06,Bakola,NA,40,flat,conical,0,0,0,0,rim,medium
+BAL-CAM-08,Bakola,wear,50,flat,cylindrical,0,0,0,0,rim,large
+BAL-CAM-21,Bakola,wear,50,flat,widecylynder,0,0,1,0,rim,large
+BAT-UGA-10,Batwa (East),hold,40,bowl,bowl,0,0,0,0,rim,small
+BAY-GAB-02,Bakoya,hold,30,flat,conical,0,1,0,0,rim,0
+BAY-GAB-02,Bakoya,wear,40,bowl,cylindrical,1,0,0,0,rim,0
+BAY-GAB-06,Bakoya,hold,30,flat,conical,0,1,0,0,rim,0
+BAY-GAB-06,Bakoya,head,40,flat,conical,1,0,verticalsticks,0,rim,0
+BAY-GAB-06,Bakoya,hold,40,flat,cylindrical,0,1,0,0,rim,large
+BAY-GAB-07,Bakoya,hold,30,flat,conical,0,0,0,0,rim,0
+BAY-GAB-08,Bakoya,hold,40,flat,cylindrical,0,1,0,0,rim,large
+BAY-GAB-08,Bakoya,NA,40,NA,NA,0,0,0,0,rim,0
+BAY-GAB-11,Bakoya,hold,30,flat,conical,0,0,0,0,rim,0
+BAY-GAB-14,Bakoya,hold,30,flat,cylindrical,0,0,0,0,rim,large
+BAY-GAB-14,Bakoya,head,40,flat,widecylynder,1,0,verticalsticks,0,rim,0
+BAY-GAB-15,Bakoya,hold,20,flat,conical,0,0,0,0,rim,0
+BAY-GAB-15,Bakoya,hold,20,flat,cylindrical,0,0,0,0,rim,0
+BAY-GAB-15,Bakoya,hold,20,flat,conical,0,0,0,0,rim,0
+BAY-GAB-15,Bakoya,hold,20,flat,conical,0,0,0,0,rim,0
+BAY-GAB-15,Bakoya,hold,20,flat,conical,0,0,0,0,rim,0
+BAY-GAB-22,Bakoya,hold,20,flat,conical,0,0,horizontalrim,0,rim,small
+BAY-GAB-23,Bakoya,hold,20,flat,conical,0,0,horizontalrim,0,rim,small
+BAY-GAB-28,Bakoya,hold,20,flat,conical,0,0,horizontalrim,0,rim,0
+BED-CAM-02,Bedzan,hold,40,flat,boat,0,0,0,0,rim,verylarge 
+BED-CAM-03,Bedzan,hold,40,flat,boat,0,0,0,0,rim,verylarge 
+BED-CAM-03,Bedzan,hold,40,flat,boat,0,0,0,0,rim,verylarge 
+BED-CAM-07,Bedzan,hold,40,flat,boat,0,0,0,0,rim,verylarge 
+BED-CAM-10,Bedzan,hold,40,flat,boat,0,0,0,0,rim,verylarge 
+BED-CAM-12,Bedzan,hold,40,flat,boat,0,0,0,0,rim,verylarge 
+EFE-DRC-03,Efe,NA,50,flat,cylindrical,1,0,NA,0,rim,verylarge
+EFE-DRC-04,Efe,head,NA,NA,NA,1,0,rope,0,rim,0
+EFE-DRC-22,Efe,NA,40,flat,barrel,0,0,0,0,rim,0
+EFE-DRC-22,Efe,NA,40,flat,barrel,0,0,0,0,rim,0
+EFE-DRC-30,Efe,wear,40,flat,cylindrical,0,0,0,0,rim,0
+EFE-DRC-30,Efe,wear,40,flat,cylindrical,0,0,0,0,rim,0
+EFE-DRC-31,Efe,wear,40,flat,cylindrical,0,0,0,0,rim,0
+MBE-DRC-02,Mbendjele,NA,50,flat,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-05,Mbendjele,NA,40,flat,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-06,Mbendjele,hold,50,flat,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-07,Mbendjele,NA,40,flat,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-15,Mbendjele,wear,50,bowl,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-16,Mbendjele,NA,NA,bowl,cylindrical,0,0,horizontalrhombus,0,rim,0
+MBE-DRC-17,Mbendjele,NA,50,bowl,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-17,Mbendjele,NA,50,bowl,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-18,Mbendjele,NA,NA,NA,NA,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-20,Mbendjele,wear,50,bowl,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-21,Mbendjele,wear,50,bowl,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-21,Mbendjele,wear,50,bowl,cylindrical,1,0,horizontalrhombus,0,rim,0
+MBE-DRC-25,Mbendjele,NA,50,flat,cylindrical,0,0,horizontalrhombus,0,rim,0
+SUA-DRC-03,Sua,NA,50,flat,cylindrical,0,0,horizontalbands,0,rim,0
+SUA-DRC-11,Sua,NA,30,flat,bucket,1,0,0,0,rim,large
+SUA-DRC-12,Sua,NA,30,flat,conical,1,0,0,0,rim,0
+SUA-DRC-12,Sua,NA,30,flat,conical,0,0,0,0,rim,0
+SUA-DRC-14,Sua,NA,20,flat,cylindrical,0,0,0,0,rim,0
+SUA-DRC-15,Sua,NA,40,flat,cylindrical,NA,0,verticalsticks,0,rim,large
+SUA-DRC-15,Sua,NA,NA,flat,bucket,1,0,0,0,rim,medium
+SUA-DRC-16,Sua,NA,40,flat,NA,NA,0,0,0,rim,large
+SUA-DRC-17,Sua,head,60,flat,conical,1,0,0,0,rim,small
+BAK-CAM-96,Baka,head,30,flat,conical,1,0,0,0,rim,0
+BAK-1,Baka,head,30,flat,conical,1,0,0,0,tuliprim,small
+BAT_24,Batwa (West),NA,20,flat,bucket,0,0,0,0,rim,0
+BAT_32,Batwa (West),wear,NA,NA,NA,NA,0,NA,1,rim,NA
+BAT_33,Batwa (West),wear,100,flat,conical,0,0,0,0,quadruplerim,small
+BAT_45,Batwa (West),hold,40,flat,square,0,0,0,0,0,0
+BAT_49,Batwa (West),hold,50,flat,cuboidal,0,0,0,0,rim,0
+BAT_50,Batwa (West),wear,60,NA,NA,NA,0,NA,0,NA,medium
+BAT_51,Batwa (West),NA,40,flat,conical,0,1,0,0,rim,0
+BAT_52,Batwa (West),hold,40,flat,conical,0,1,0,0,triplerim,0
+BAT_52,Batwa (West),hold,40,flat,cylindrical,0,1,0,0,quadruplerim,0
+BAT_53,Batwa (West),hold,40,flat,conical,0,1,0,0,triplerim,0
+BAT_53,Batwa (West),hold,40,flat,cylindrical,0,1,0,0,quadruplerim,0
+BAT_57,Batwa (West),hold,50,flat,cylindrical,0,0,0,0,rim,0
+BAT_63,Batwa (West),NA,100,flat,cylindrical,1,1,0,0,rim,0
+BAT_63,Batwa (West),NA,100,flat,cuboidal,0,0,0,0,rim,0
+BAT-01,Batwa (West),wear,100,flat,conical,1,0,0,0,doublerim,0
+BAT-01,Batwa (West),wear,60,flat,conical,1,0,0,0,doublerim,0
+BAT-01,Batwa (West),wear,60,flat,conical,1,0,0,0,doublerim,0
+BAT-01,Batwa (West),hold,30,flat,widecylynder/cylindrical,0,0,0,0,rim,0
+BAT-01,Batwa (West),hold,50,flat,cuboidal,0,0,0,0,doublerim,0
+BAT-01,Batwa (West),hold,50,flat,cuboidal,0,0,0,0,doublerim,0
+BAT-01,Batwa (West),hold,50,flat,conical,0,0,0,0,doublerim,0
+BAT-01,Batwa (West),hold,50,flat,conical,0,0,0,0,doublerim,0
+BAT-03,Batwa (East),hold,40,flat,bowl,0,0,0,0,0,small
+KAN_2,Sua,hold,35,flat,bowl,0,0,darkpatterns,0,0,0
+TWA_25,Batwa (East),hold,30,bowl,bowl,0,0,0,0,0,0
+TWA_26,Batwa (East),hold,30,bowl,bowl,0,0,0,0,0,0
+TWA_27,Batwa (East),hold,30,bowl,bowl,0,0,0,0,0,0
+TWA_94,Batwa (East),NA,40,flat,barrel,0,0,0,0,0,0

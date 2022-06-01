@@ -1,0 +1,107 @@
+﻿Trait,Culture,Arrow::tipmaterial,Arrow::size,Arrow::pointshape,Arrow::addonbottom,Arrow::triangleshape,Arrow::notches
+AKA-CAR-69,Aka,wood,50,0,NA,NA,0
+AKA-CAR-71,Aka,metal,50,rhombus,0,0,0
+AKA-CAR-71,Aka,metal,50,drop,0,0,0
+AKA-CAR-71,Aka,metal,50,diamond,0,0,0
+AKA-CAR-71,Aka,metal,50,NA,0,0,0
+AKA-CAR-74,Aka,wood,50,0,0,0,0
+BAB-GAB-06,Babongo,wood,30,0,0,0,0
+BAK-CAM-65,Baka,wood,NA,NA,NA,NA,0
+BAK-CAM-66,Baka,wood,30,0,0,0,0
+BAK-CAM-66,Baka,wood,30,0,0,0,0
+BAK-CAM-66,Baka,wood,30,0,0,0,0
+BAK-CAM-66,Baka,metal,40,0,1,triangle,0
+BAK-CAM-66,Baka,metal,30,drop,1,triangle,0
+BAK-CAM-66,Baka,metal,40,rhombus,1,triangle,0
+BAK-CAM-66,Baka,metal,40,clove,1,triangle,0
+BAL-1,Bakola,metal,50,stretcheddrop,1,drop,0
+BAL-1,Bakola,metal,50,stretcheddrop,1,drop,0
+BAL-1,Bakola,metal,50,stretcheddrop,1,drop,0
+BAL-1,Bakola,metal,50,stretcheddrop,1,drop,0
+BAL-1,Bakola,metal,50,stretcheddrop,1,drop,0
+BAY-GAB-05,Bakoya,wood,40,0,0,0,0
+BAT-RWA-01b,Batwa (East),metal,120,NA,NA,NA,0
+BAT-RWA-03,Batwa (East),metal,100,drop,0,0,0
+BAT-RWA-03,Batwa (East),metal,100,fish,0,0,0
+BAT-RWA-04,Batwa (East),metal,40,drop,0,0,0
+BAT-RWA-04,Batwa (East),metal,40,drop,0,0,0
+BAT-UGA-01,Batwa (East),metal,40,triangle,1,rhomboid,0
+BAT-UGA-04,Batwa (East),metal,40,NA,1,NA,0
+BAT-UGA-04,Batwa (East),metal,40,NA,1,NA,0
+BAT-UGA-04,Batwa (East),metal,40,NA,1,NA,0
+BAT-UGA-06,Batwa (East),metal,40,NA,1,NA,0
+BAT-06,Batwa (East),metal,60,NA,1,rolledstring,0
+BAT-06,Batwa (East),metal,60,NA,1,rolledstring,0
+BAT-07,Batwa (East),metal,80,fish,1,rolledstring,0
+BAT-07,Batwa (East),metal,80,fish,1,rolledstring,0
+BAT-07,Batwa (East),metal,80,fish,1,rolledstring,0
+BAT-07,Batwa (East),metal,60,fish,1,rolledstring,0
+TWA_29,Batwa (East),metal,NA,NA,NA,NA,NA
+TWA_29,Batwa (East),metal,NA,NA,NA,NA,NA
+CWA-DRC-10,Batwa (West),metal,80,drop,1,rhomboid,0
+CWA-DRC-11,Batwa (West),NA,70,NA,1,rhomboid,0
+CWA-DRC-09,Batwa (West),metal,80,drop,1,NA,2
+BAT_31,Batwa (West),metal,40,drop,0,0,0
+BAT_23,Batwa (West),metal,50,rhombus,1,triangle,0
+BAT_23,Batwa (West),metal,50,rhombus,1,triangle,0
+BAT_23,Batwa (West),metal,50,rhombus,1,triangle,0
+BAT_66,Batwa (West),NA,50,NA,NA,NA,NA
+BAT_67,Batwa (West),NA,50,NA,NA,NA,
+BED-CAM-09,Bedzan,NA,1.2,NA,NA,NA,NA
+BED-CAM-20,Bedzan,metal,50,fish,0,0,0
+BED-CAM-20,Bedzan,metal,1,NA,NA,NA,0
+EFE-DRC-01,Efe,metal,30,drop,1,house,0
+EFE-DRC-02,Efe,wood,40,0,0,0,0
+EFE-DRC-03,Efe,metal,30,drop,1,triangle,0
+EFE-DRC-03,Efe,metal,30,triangle,1,NA,0
+EFE-DRC-05,Efe,metal,40,rhombus,1,drop,0
+EFE-DRC-05,Efe,metal,40,rhombus,1,drop,0
+EFE-DRC-05,Efe,metal,40,rhombus,1,house,0
+EFE-DRC-05,Efe,metal,40,rhombus,1,drop,0
+EFE-DRC-05,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-05,Efe,metal,40,diamond,1,drop,0
+EFE-DRC-05,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-06,Efe,wood,30,0,1,triangle,0
+EFE-DRC-06,Efe,wood,30,0,1,triangle,0
+EFE-DRC-07,Efe,metal,40,rhombus,1,triangle,0
+EFE-DRC-07,Efe,metal,40,rhombus,1,house,0
+EFE-DRC-07,Efe,metal,40,drop,1,triangle,0
+EFE-DRC-07,Efe,metal,40,diamond,1,house,0
+EFE-DRC-07,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-07,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-07,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-07,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-07,Efe,metal,40,diamond,1,triangle,0
+EFE-DRC-21b,Efe,metal,NA,NA,NA,NA,NA
+EFE-DRC-33,Efe,metal,30,drop,1,drop,0
+EFE-DRC-33,Efe,metal,30,drop,NA,NA,0
+EFE-DRC-33,Efe,metal,30,drop,NA,NA,1
+EFE-DRC-33,Efe,metal,30,drop,NA,NA,2
+SUA-DRC-07,Sua,wood,30,0,1,rhomboid,0
+SUA-DRC-07,Sua,wood,30,0,1,rhomboid,0
+SUA-DRC-07,Sua,wood,30,0,1,rhomboid,0
+SUA-DRC-08,Sua,metal,40,drop,1,fish,2
+SUA-DRC-08,Sua,metal,30,leaf,1,fish,0
+SUA-DRC-08,Sua,metal,30,leaf,1,fish,0
+SUA-DRC-09,Sua,metal,40,drop,1,house,2
+SUA-DRC-09,Sua,metal,40,leaf,1,house,0
+SUA-DRC-09,Sua,metal,30,drop,1,house,0
+SUA-DRC-09,Sua,metal,30,drop,1,triangle,0
+SUA-DRC-09,Sua,metal,30,drop,1,triangle,0
+SUA-DRC-09,Sua,metal,30,drop,1,triangle,0
+SUA-DRC-09,Sua,metal,30,drop,1,triangle,0
+SUA-DRC-09,Sua,metal,30,drop,1,house,0
+SUA-DRC-09,Sua,metal,30,drop,1,rhomboid,0
+SUA-DRC-09,Sua,metal,30,drop,1,rhomboid,0
+SUA-DRC-14,Sua,wood,30,0,1,drop,0
+SUA-DRC-18,Sua,wood,30,0,1,NA,0
+;BU=4,Sua,metal,30,drop,1,NA,0
+;BU=4,Sua,wood,30,straight,1,NA,0
+;BU=4,Sua,metal,30,drop,1,NA,0
+EPULU-1,Sua,metal,NA,rhombus,0,NA,0
+EPULU-1,Sua,metal,NA,drop,0,NA,0
+MBU-20,Sua,metal,NA,drop,NA,NA,0
+MBU-20,Sua,metal,NA,drop,NA,NA,0
+MBU-20,Sua,metal,NA,drop,NA,NA,0
+MBU-20,Sua,metal,NA,drop,NA,NA,0
+MBU-20,Sua,metal,NA,drop,NA,NA,0
