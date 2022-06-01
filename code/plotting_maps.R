@@ -1,9 +1,6 @@
 ## SCRIPT FOR PLOTTING NETWORKS OF JACCARD DISTANCES ON MAP OF CENTRAL AFRICA
 # Author: Cecilia Padilla-Iglesias
 
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021")
-load("SpatialCulture.RData")
-
 #######################################
 # Plot networks on a map
 

@@ -1,8 +1,6 @@
 # Prepare spacemix input
 
-# If you have use is_weighted option you'll already have freqs adjusted for sample size
 
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Genetic_studies_pygmies/Final_Data/maasMDS/data_modify")
 pops <- c("Baka", "Bakoya", "Bakola", "Mbuti", "Batwa", "Biaka", "Bedzan", "Babongo")
 i <- "Babongo"
 freq <- read.table(paste(i,".freq", sep=""), sep=",", header=1)
@@ -48,7 +46,6 @@ count_list_t <- count_list_t[-1,]
 write.csv(count_list_t, "count_list.csv", row.names = T, col.names = T)
 
 ## Plot genetic groups
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Genetic_studies_pygmies/Final_Data/New genetics march 2021/SNP chip data/Patin_Jarvis")
 pops <- read.csv("pop_desc.csv")
 pops[pops=="Biaka"] <- "Aka"
 coord_pop<- data.frame(long=pops$Longitude, lat=pops$Latitude)
@@ -83,7 +80,6 @@ dev.off()
 
 #####################
 locations <- read.csv("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/location_culture_centroids2.csv", row.names = 1)
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/spacemix")
 
 freq_mat <- read.table("loci_list.csv", sep=",")
 count_mat <- read.table("count_list.csv", sep=",")
