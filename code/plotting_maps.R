@@ -20,7 +20,7 @@ g <- list.files(pattern="NE1_HR")
 g <- raster(g)
 
 # extent of cultures map
-my_extent <- extent(8,31,-7,7) #extent of the pygmies shapefile
+my_extent <- extent(8,31,-7.5,9) #extent of the pygmies shapefile
 g <- crop(g, my_extent)
 
 # Start with musical instruments
