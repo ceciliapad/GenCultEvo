@@ -78,11 +78,6 @@ theme_scree <- function(...) {
 
 # Plot function
 plot_pc_scree <- function(eigenval, title, type="PC") {
-#' Generates scree plots for either the PCs or the PCos
-#' @param eigenval: the eigenvalues of the PC(o)
-#' @param title: the title of the plot
-#' @param type: the type of the plot (either PC or PCo)
-#' @return the scree plot (ggplot)
 
   if (type == "PC") {
     pc_index = seq(1:nrow(eigenval))
@@ -149,9 +144,6 @@ heat_map_pc <- function(pcs, type="PCo"){
   #' @param type: either PC or PCo
   #' @return the heat map (ggplot)
   
-  #reorder <- c("Ainu", "Japanese", "Korean", "Buryat", "Even", "Evenki", "Yakut", "Selkup",
-               #"Nivkh", "Nganasan", "Chukchi", "Koryak", "Yukagir", "West Greenlandic")
-  #pcs <- pcs[reorder, ]
 
   cnames <- colnames(pcs)
   

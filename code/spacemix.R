@@ -56,11 +56,8 @@ coord_pop<- data.frame(long=pops$Longitude, lat=pops$Latitude)
 pops[pops=="Bezan"] <- "Bedzan"
 coord_pop<- data.frame(long=pops$Longitude, lat=pops$Latitude)
 # load shapefile
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/shapefile_cultures")
 pygmies <- rgdal::readOGR ("cultural.groupsfixed.shp")
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/shapefile_borders")
 borders <- rgdal::readOGR ("borders.congo.shp")
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021")
 
 my_pal <- c(MetPalettes$Isfahan1[[1]], MetPalettes$Isfahan2[[1]][2])
 
@@ -79,8 +76,9 @@ text(coord_pop, labels = pops$Population, pos =3, offset = 0.6, cex =0.7)
 dev.off()
 
 #####################
-locations <- read.csv("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/location_culture_centroids2.csv", row.names = 1)
+locations <- read.csv("location_culture_centroids.csv", row.names = 1)
 
+# the tables below are the output from spacemix. VERY large files.
 freq_mat <- read.table("loci_list.csv", sep=",")
 count_mat <- read.table("count_list.csv", sep=",")
 rownames(freq_mat) <- freq_mat[,1]
@@ -112,7 +110,7 @@ run.spacemix.analysis(n.fast.reps=10, fast.MCMC.ngen=1e5, fast.model.option="tar
 
 
 # Spacemix with music
-count_music <- read.csv("P_A_music2.csv", row.names = 1)
+count_music <- read.csv("P_A_music.csv", row.names = 1)
 count_music <- as.matrix(count_music)
 total_music <- read.csv("music_sample_size.csv", row.names = 1)
 total_music <- as.matrix(total_music)
@@ -125,7 +123,7 @@ run.spacemix.analysis(n.fast.reps=10, fast.MCMC.ngen=1e5, fast.model.option="tar
 
 
 # Spacemix with subsistence
-count_subsistence <- read.csv("P_A_subsistence2.csv", row.names = 1)
+count_subsistence <- read.csv("P_A_subsistence.csv", row.names = 1)
 count_subsistence <- as.matrix(count_subsistence)
 total_subsistence <- read.csv("subsistence_sample_size.csv", row.names = 1)
 total_subsistence <- as.matrix(total_subsistence)
@@ -138,12 +136,12 @@ run.spacemix.analysis(n.fast.reps=10, fast.MCMC.ngen=1e5, fast.model.option="tar
 
 # Make maps
 
-subsistence.map.list <- make.spacemix.map.list(MCMC.output.file = "/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/spacemix/run_611922/cahg_spacemix_subsistence_LongRun/cahg_spacemix_subsistence_space_MCMC_output1.Robj",
+subsistence.map.list <- make.spacemix.map.list(MCMC.output.file = "cahg_spacemix_subsistence_space_MCMC_output1.Robj",
                                                geographic.locations = as.matrix(locations[,2:3]), name.vector = rownames(freq_mat),color.vector = sample.colors, quantile=0.95, burnin=0)
-music.map.list <- make.spacemix.map.list(MCMC.output.file = "/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/spacemix/run_299078/cahg_spacemix_music_LongRun/cahg_spacemix_music_space_MCMC_output1.Robj",
+music.map.list <- make.spacemix.map.list(MCMC.output.file = "cahg_spacemix_music_space_MCMC_output1.Robj",
                                               geographic.locations = as.matrix(locations[,2:3]), name.vector = rownames(freq_mat),color.vector = sample.colors, quantile=0.95, burnin=0)
 
-cahg.map.list <- make.spacemix.map.list(MCMC.output.file = "/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/spacemix/run_793742/cahg_spacemix_all_LongRun/cahg_spacemix_all_space_MCMC_output1.Robj",
+cahg.map.list <- make.spacemix.map.list(MCMC.output.file = "cahg_spacemix_all_space_MCMC_output1.Robj",
                                         geographic.locations = as.matrix(locations[,2:3]), name.vector = rownames(freq_mat),color.vector = sample.colors, quantile=0.95, burnin=0)
 
 make.spacemix.map(spacemix.map.list = subsistence.map.list,
@@ -191,16 +189,7 @@ segments(cahg.map.list$MAPP.geogen.coords[,1], cahg.map.list$MAPP.geogen.coords[
 text(cahg.map.list$geographic.locations[,1], (cahg.map.list$geographic.locations[,2])+0.6, cahg.map.list$name.vector, col=locations$Col, cex=0.8, font=2)
 dev.off()
 
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021")
-library(raster)
-library(rgdal)
-library(maps)
-# load shapefile
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/shapefile_cultures")
-pygmies <- rgdal::readOGR ("cultural.groupsfixed.shp")
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/shapefile_borders")
-borders <- rgdal::readOGR ("borders.congo.shp")
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021")
+
 # Load natural earth data
 g <- list.files(pattern="NE1_HR")
 g <- raster(g)
@@ -210,7 +199,6 @@ g <- crop(g, my_extent)
 
 # Color for Baka not very clear
 locations$Col[1] <- "#d7aca1"
-
 
 tiff(file="map_music_real.tiff", units="in", width=7, height=6, res=500)
 plot(g, col=rev(hcl.colors(100, palette="Earth")), legend=F, main="Musical instruments", box=F, axes=F)
@@ -292,7 +280,7 @@ make.spacemix.map.list <- function(MCMC.output.file,geographic.locations,name.ve
 
 
 
-cahg.map.list <- make.spacemix.map.list(MCMC.output.file = "/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/spacemix/run_793742/cahg_spacemix_all_LongRun/cahg_spacemix_all_space_MCMC_output1.Robj",
+cahg.map.list <- make.spacemix.map.list(MCMC.output.file = "cahg_spacemix_all_space_MCMC_output1.Robj",
                                         geographic.locations = as.matrix(locations[,2:3]), name.vector = locations$Culture,color.vector = locations$Col, quantile=0.95, burnin=0)
 
 
@@ -358,7 +346,7 @@ query.spacemix.map <- function(focal.pops,spacemix.map.list,ellipses=TRUE,source
 }
 
 
-# Edited this function so I can see the admixture proportions from the besst run
+# Edited this function so I can see the admixture proportions from the best run
 
 tiff(file="admixture_sources.tiff", units="in", width=7.5, height=6, res=500)
 make.spacemix.map(spacemix.map.list = cahg.map.list,

@@ -50,19 +50,16 @@ cahg <- c("Biaka", "Baka", "Bakola", "Bakoya", "Babongo", "Bedzan", "Mbuti",
 # Plot genetic populations within areas sampled for material culture
 
 # load shapefile
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/shapefile_cultures")
-pygmies <- rgdal::readOGR ("cultural.groupsfixed.shp")
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/shapefile_borders")
+cahg <- rgdal::readOGR ("cultural.groupsfixed.shp")
 borders <- rgdal::readOGR ("borders.congo.shp")
 
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021")
 # Load natural earth data
 library(raster)
 g <- list.files(pattern="NE1")
 g <- raster(g)
 
 # extent of cultures map
-my_extent <- extent(8,31,-7,7) #extent of the pygmies shapefile
+my_extent <- extent(8,31,-7,7) #extent of the cahg shapefile
 g <- crop(g, my_extent)
 
 library(reshape2)
@@ -76,16 +73,14 @@ par (mar=c(3,4,3,0))
 #par (mar=c(0,4,0,0))
 plot(g, col=rev(hcl.colors(100, palette="Earth")), legend=F, box=F, axes=F)
 plot(borders, add=T)
-plot(pygmies, add=T, col = MetPalettes$Isfahan2[[1]][1])
+plot(cahg, add=T, col = MetPalettes$Isfahan2[[1]][1])
 points(coord_pop, pch=17, col=MetPalettes$Isfahan1[[1]][7], cex=1, lwd=1.5)
 text(coord_pop, labels = pops$Population, pos =3, offset = 0.6, cex =0.7)
 dev.off()
 
-# All the results including PCA, HOM and FST (Lane's program) are here - only comprising CAHG:
-# For results with full dataset go to "/Users/Cecilia/Documents/PhD/African_Pygmies/Genetic_studies_pygmies/Final_Data/New genetics march 2021/SNP chip data/Patin_Jarvis"
-# see folders there
 
-setwd("/Users/Cecilia/Documents/PhD/African_Pygmies/Genetic_studies_pygmies/Final_Data/New genetics march 2021/SNP chip data/Patin_Jarvis/ibdne_trial/results_summary")
+# heterozygosity
+
 het=as.matrix(read.table("homozygosity_CAHG_PJ.het",head=T))
 het_df <- as.data.frame(het)
 
@@ -178,9 +173,6 @@ ggsave(p, filename="het_masked_new_nb.tiff", height=120, width=220, units="mm")
 fst <- read.csv("output_CAHG/pairwise_fst.csv", row.names = 1)
 fst <- as.matrix(fst)
 pygmy_names <- row.names(fst)
-# edit name directly in .csv file
-#pygmy_names[pygmy_names=="Biaka"] <- "Aka"
-#fst[fst=="Biaka"] <- "Aka"
 
 colnames(fst) <- rownames(fst)
 dim <- ncol(fst)
@@ -210,9 +202,6 @@ dev.off()
 
 pca1 <- read.table("pca_Patin_Jarvis_CAHG_groups.eigenval",sep=" ",header=F)
 pca2 <- read.table("pca_Patin_Jarvis_CAHG_groups.eigenvec",sep=" ",header=F)
-
-#pca1 <- read.table("/Users/Cecilia/Documents/PhD/African_Pygmies/Genetic_studies_pygmies/Final_Data/New genetics march 2021/SNP chip data/Patin_Jarvis/pca_groups.eigenval",sep=" ",header=F)
-#pca2 <- read.table("/Users/Cecilia/Documents/PhD/African_Pygmies/Genetic_studies_pygmies/Final_Data/New genetics march 2021/SNP chip data/Patin_Jarvis/pca_groups.eigenvec",sep=" ",header=F)
 
 pca2[pca2=="Biaka"]<-"Aka"
 population=as.data.frame(table(pca2$V1))$Var1
@@ -259,9 +248,9 @@ roh <- read.table("merged_data_flipped_clean.hom",sep="", header = T)
 roh_ind <- read.table("merged_data_flipped_clean.hom.indiv",sep="", header = T)
 
 roh_pops_2 <- roh_ind <-  as.data.frame(roh_ind)
-pygmies_roh <- roh_ind
+cahg_roh <- roh_ind
 
-mean(pygmies_roh$KB)
+mean(cahg_roh$KB)
 
 roh_pops_2 <- roh_pops_2 %>%                 # Specify data frame
   group_by(FID) %>%                          # Population
@@ -275,13 +264,13 @@ write.csv(roh_pops_2, "runs_homo.csv")
 cahg <- c("Biaka", "Baka", "Bakola", "Bakoya", "Babongo", "Bedzan", "Mbuti",
           "Batwa")
 
-pygmies_roh <- subset(pygmies_roh, pygmies_roh$FID %in% cahg)
+cahg_roh <- subset(cahg_roh, cahg_roh$FID %in% cahg)
 
-pygmies_roh$KB  <- as.integer(round(pygmies_roh$KB,0))
-# Violin plot for pygmies
-pygmies_roh$FID[pygmies_roh$FID=="Biaka"]<-"Aka"
-pygmies_roh$FID[pygmies_roh$FID=="Batwa"]<-"Batwa (East)"
-pygmies_roh$FID[pygmies_roh$FID=="Mbuti"]<-"Efe & Sua"
+cahg_roh$KB  <- as.integer(round(cahg_roh$KB,0))
+# Violin plot for cahg
+cahg_roh$FID[cahg_roh$FID=="Biaka"]<-"Aka"
+cahg_roh$FID[cahg_roh$FID=="Batwa"]<-"Batwa (East)"
+cahg_roh$FID[cahg_roh$FID=="Mbuti"]<-"Efe & Sua"
 
 library(MetBrewer)
 
@@ -289,7 +278,7 @@ pal <- c(MetPalettes$Isfahan1[[1]], MetPalettes$Isfahan2[[1]][2])
 #pal <- wes_palette("Darjeeling1", 11, type = "continuous")
 #pal <- hcl.colors(11, "Geyser", rev=TRUE)
 
-p <- ggplot(pygmies_roh, aes(x=FID, y=KB, fill=FID)) + 
+p <- ggplot(cahg_roh, aes(x=FID, y=KB, fill=FID)) +
   ggtitle("CAHG") + 
   geom_violin(trim=TRUE) + 
   xlab("") +
@@ -297,9 +286,9 @@ p <- ggplot(pygmies_roh, aes(x=FID, y=KB, fill=FID)) +
   geom_boxplot(width=0.1, outlier.shape = NA, fill="white")+
   theme_classic() 
 p <- p + scale_fill_manual(values=pal) + theme(legend.position = "none", text = element_text(size = 12))
-ggsave(p, filename="runs_homo_pygmies_new.png", height=150, width=250, units="mm")
+ggsave(p, filename="runs_homo_cahg_new.png", height=150, width=250, units="mm")
 
-write.csv(pygmies_roh, "pygmies_roh_new.csv")
+write.csv(cahg_roh, "cahg_roh_new.csv")
 
 
 other_hg <- c("Hadza", "Ogiek", "Wata", "Boni", "Sandawe")
@@ -363,6 +352,5 @@ p <- ggplot(nb_roh, aes(x=FID, y=KB, fill=meta)) +
 p <- p + scale_fill_manual(values=pal_nb) + theme(legend.position = "none", text = element_text(size = 12))
 ggsave(p, filename="runs_homo_all_nb.png", height=150, width=300, units="mm")
 
-write.csv(pygmies_roh, "pygmies_all_hg_new.csv")
-
+write.csv(cahg_roh, "cahg_all_hg_new.csv")
 
