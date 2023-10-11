@@ -757,78 +757,85 @@ dev.off()
 words_music <- subset(word_dists, word_dists$type=="music")
 words_subsistence <- subset(word_dists, word_dists$type=="subsistence")
 
+words_music$std_pmi <- (words_music$linguistic_distance - mean(words_music$linguistic_distance, na.rm=T)) / sd(words_music$linguistic_distance, na.rm=T)
 
-m2 <- zeroinfl(total_shared ~ type + spatial_dist + gen_dist_masked + linguistic_distance, dist = "poisson", data=word_dists)
-summary(m2)
-m2 <- zeroinfl(total_shared ~ spatial_dist + gen_dist_masked + linguistic_distance, dist = "poisson", data=words_music)
-summary(m2)
-m5 <- zeroinfl(shared_unique ~ spatial_dist + gen_dist_masked + linguistic_distance, dist = "poisson", data=words_music)
-summary(m5)
-
-unwords_complete <- words_music[complete.cases(words_music),]
-m2l <- zeroinfl(total_shared ~ linguistic_distance, dist = "poisson", data=words_music)
-m2g <- zeroinfl(total_shared ~ gen_dist_masked, dist = "poisson", data=words_music)
-m2s <- zeroinfl(total_shared ~ spatial_dist, dist = "poisson", data=words_music)
-lmtest::lrtest(m2, m2l)
-
-m3l <- zeroinfl(shared_unique ~ linguistic_distance, dist = "poisson", data=words_music)
-m3g <- zeroinfl(shared_unique ~ gen_dist_masked, dist = "poisson", data=words_music)
-m3s <- zeroinfl(shared_unique ~ spatial_dist, dist = "poisson", data=words_music)
-
-m2 <- zeroinfl(total_shared ~ spatial_dist + gen_dist_masked + linguistic_distance, dist = "poisson", data=words_subsistence)
-summary(m2)
+m8 <- zeroinfl(shared_unique ~  std_gen + std_pmi, dist = "poisson", data=words_music)
+summary(m8)
+model_summary8 <- summary(m8)
+coef_table <- model_summary8$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_uniqueshared_pmi_gen.csv")
+m9 <- zeroinfl(shared_unique ~  std_spatial + std_pmi, dist = "poisson", data=words_music)
+summary(m9)
+model_summary9 <- summary(m9)
+coef_table <- model_summary9$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_uniqueshared_pmi_space.csv")
 
 
-# DO THE SAME WITH PATRISTIC DISTANCES
+m10 <- zeroinfl(total_shared ~  std_gen + std_pmi, dist = "poisson", data=words_music)
+summary(m10)
+model_summary10 <- summary(m10)
+coef_table <- model_summary10$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_totalshared_pmi_gen.csv")
+m11 <- zeroinfl(total_shared ~  std_spatial + std_pmi, dist = "poisson", data=words_music)
+summary(m11)
+model_summary11 <- summary(m11)
+coef_table <- model_summary11$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_totalshared_pmi_space.csv")
+
+words_music$std_spatial <- (words_music$spatial_dist - mean(words_music$spatial_dist, na.rm=T)) / sd(words_music$spatial_dist, na.rm=T)
+words_music$std_gen <- (words_music$gen_dist_masked - mean(words_music$gen_dist_masked, na.rm=T)) / sd(words_music$gen_dist_masked, na.rm=T)
+words_music$std_glotto <- (words_music$glotto_nodes - mean(words_music$glotto_nodes, na.rm=T)) / sd(words_music$glotto_nodes, na.rm=T)
+
+m12 <- zeroinfl(shared_unique ~  std_gen + std_glotto, dist = "poisson", data=words_music)
+summary(m12)
+model_summary12 <- summary(m12)
+coef_table <- model_summary12$coefficients
+write.csv(coef_table, "../results¡/summary_zip_uniqueshared_glotto_gen.csv")
+m13 <- zeroinfl(shared_unique ~  std_spatial + std_glotto, dist = "poisson", data=words_music)
+summary(m13)
+model_summary13 <- summary(m13)
+coef_table <- model_summary13$coefficients
+write.csv(coef_table, "../results/summary_zip_uniqueshared_glotto_space.csv")
+
+m14 <- zeroinfl(total_shared ~  std_gen + std_glotto, dist = "poisson", data=words_music)
+summary(m14)
+model_summary14 <- summary(m14)
+coef_table <- model_summary14$coefficients
+write.csv(coef_table, "../results/summary_zip_totalshared_glotto_gen.csv")
+m15 <- zeroinfl(total_shared ~  std_spatial + std_glotto, dist = "poisson", data=words_music)
+summary(m15)
+model_summary15 <- summary(m15)
+coef_table <- model_summary15$coefficients
+write.csv(coef_table, "../results/summary_zip_totalshared_glotto_space.csv")
+
 
 bantu_music <- subset(words_music, !(words_music$ID2 %in% c("Efe", "Bedzan", "Baka")))
 bantu_music <- subset(bantu_music, !(bantu_music$ID1 %in% c("Efe", "Bedzan", "Baka")))
 
-m2 <- zeroinfl(total_shared ~ type + spatial_dist + gen_dist_masked + koile_patristic, dist = "poisson", data=word_dists)
-summary(m2)
-m3 <- zeroinfl(total_shared ~ spatial_dist + gen_dist_masked + koile_patristic, dist = "poisson", data=words_music)
-summary(m3)
-m4 <- zeroinfl(total_shared ~ spatial_dist + gen_dist_masked + koile_patristic, dist = "poisson", data=bantu_music)
-summary(m4)
+words_music$std_koile <- (words_music$koile_patristic - mean(words_music$koile_patristic, na.rm=T)) / sd(words_music$koile_patristic, na.rm=T)
 
-m3l <- zeroinfl(shared_unique ~ koile_patristic, dist = "poisson", data=words_music)
-m3g <- zeroinfl(shared_unique ~ gen_dist_masked, dist = "poisson", data=words_music)
-m3s <- zeroinfl(shared_unique ~ spatial_dist, dist = "poisson", data=words_music)
+m16 <- zeroinfl(shared_unique ~  std_gen + std_koile, dist = "poisson", data=words_music)
+summary(m16)
+model_summary16 <- summary(m16)
+coef_table <- model_summary16$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_uniqueshared_koile_gen.csv")
+m17 <- zeroinfl(shared_unique ~  std_spatial + std_koile, dist = "poisson", data=words_music)
+summary(m17)
+model_summary17 <- summary(m17)
+coef_table <- model_summary17$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_uniqueshared_koile_space.csv")
 
-bantu_complete <- bantu_music[complete.cases(bantu_music),]
-words_complete <- words_music[complete.cases(words_music),]
-m2l <- zeroinfl(total_shared ~ koile_patristic, dist = "poisson", data=words_music)
-m2g <- zeroinfl(total_shared ~ gen_dist_masked, dist = "poisson", data=words_music)
-m2s <- zeroinfl(total_shared ~ spatial_dist, dist = "poisson", data=words_music)
-lmtest::lrtest(m2, m2l)
+m18 <- zeroinfl(total_shared ~  std_gen + std_koile, dist = "poisson", data=words_music)
+summary(m18)
+model_summary18 <- summary(m18)
+coef_table <- model_summary18$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_totalshared_koile_gen.csv")
+m19 <- zeroinfl(total_shared ~  std_spatial + std_koile, dist = "poisson", data=words_music)
+summary(m19)
+model_summary19 <- summary(m19)
+coef_table <- model_summary19$coefficients
+write.csv(coef_table, "../results_sep_23/summary_zip_totalshared_koile_space.csv")
 
-cor.test(words_music$total_shared, words_music$koile_patristic, method="pearson")
-cor.test(words_complete$total_shared, words_complete$linguistic_distance, method="pearson")
-cor.test(words_complete$total_shared, words_complete$gen_dist_masked, method="pearson")
-
-words_non0 <- subset(words_music, words_music$koile_patristic > 0)
-cor.test(words_music$koile_patristic, words_music$linguistic_distance)
-plot(words_non0$koile_patristic, words_non0$linguistic_distance)
-m5 <- lm(koile_patristic ~ linguistic_distance, data=words_music)
-summary(m5)
-m6 <- lm(koile_patristic ~ linguistic_distance, data=words_non0)
-summary(m6)
-m7 <- lm(linguistic_distance ~ koile_patristic, data=words_non0)
-summary(m7)
-m8 <- lm(linguistic_distance ~ koile_patristic, data=words_music)
-summary(m8)
-
-scatter_plot <- ggplot(words_non0, aes(y = linguistic_distance, x= koile_patristic)) +
-  geom_point() +
-  ylab("PMI") +
-  xlab("Patristic distance")
-
-# Add the regression line to the scatter plot
-scatter_plot_with_line <- scatter_plot +
-  geom_abline(intercept = coef(m7)[1], slope = coef(m7)[2], color = "turquoise", lwd=1.2)
-
-# Display the scatter plot with the regression line
-print(scatter_plot_with_line)
 
 
 
