@@ -1,3 +1,4 @@
+# Functions required to run the code from Padilla-Iglesias et al. 2023
 
 # THESE FUNCTIONS ARE ADAPTED FROM SHENNAN ET AL. 2015 EVOL.HUM.BEH.
 

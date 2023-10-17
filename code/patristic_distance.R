@@ -10,7 +10,7 @@ library(RColorBrewer)
 library(PCMBase)
 library(TreeTools)
 
-#MCCT geo augmented from Koile et al. 2023
+#MCCT geo augmented from Koile et al. 2023 - downloaded from original paper
 
 tree.yes.geo.annot.augmented <- read_annotated("Trees/03-linguistic_geographic_augmented/ba_ok.tree", format="nexus")
 #extract lat and long----
@@ -29,7 +29,7 @@ tree.yes.geo.annot.augmented
 
 temp <- tree.yes.geo.annot.augmented$node.comment
 
-# Calculate patristic distances
+# Calculate patristic distances between languages in Table S13
 library(adephylo)
 tips=c("D311_Bila", "C83_Bushong", "B31_Tsogo",
        "B71aLe_Teke_Leconi", "B602_Kaningi_Nord", "Glotto_Kinyarwanda",
@@ -71,7 +71,7 @@ write.csv(max_tree_dist, "max_phylo_dist_koile.csv")
 ##################################################################
 
 # read in pmi distances and patristic distances
-shared_words <- read.csv("/Users/Cecilia/Documents/PhD/African_Pygmies/Spatial analysis culture/My_data/Nov_2021/final_paper_files/results_final_paper/data/shared_words_counts.csv")
+shared_words <- read.csv("shared_words_counts_september23.csv")
 shared_music <- subset(shared_words, shared_words$type=="music")
 adj_pmi <- xtabs(linguistic_distance ~ ID2 + ID1, data = shared_music)
 adj_patristic <- xtabs(koile_patristic ~ ID2 + ID1, data = shared_music)

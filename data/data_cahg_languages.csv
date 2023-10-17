@@ -1,0 +1,14 @@
+﻿ID,Name,Latitude,Longitude,Glottocode,ISO639P3code,Group
+EFE,Efe,1.88,29.29,efee1239,efe,Efe
+RWANDA_TWA_KINIGI,Rwanda Twa Kinigi,-2,30,kiny1244,kin,Batwa (East)
+BUSHONG_1,Bushong 1,-4.5,21.5,bush1247,buf,Batwa (West)
+BAKA_2,Baka 2,2.58,13.58,baka1272,bkc,Baka
+TSOGO,Tsogo,-1.5,11.33,tsog1243,tsv,Babongo
+NZEBI_1,Nzebi 1,-1.25,13,njeb1242,nzb,Babongo
+TEKE,Teke,-3.67,16.67,ibal1241,tek,Babongo
+KANINGI,Kaningi,-1.75,13.58,kani1279,kzo,Babongo
+GYELE,Gyele,2.47,10.25,gyel1242,gyi,Bakola
+TIKAR_AKUEN,Tikar Akuen,5.83,11.67,tika1246,tik,Bedzan
+NGOM_KELE,Ngom Kele,0.67,14.42,ngom1270,nra,Bakoya
+C10_GANDO,C10 Gando,3.75,17.75,ngan1304,ngd,Aka
+BIRA,Bila,1,28.75,bila1255,bip,Sua

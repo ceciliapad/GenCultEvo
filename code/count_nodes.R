@@ -18,6 +18,7 @@ library(flextable)
 library(phyloWeights)
 library(glottoTrees)
 
+# Glottolog v-4-8 tree downloaded from website
 tree <- ape::read.tree("tree_glottolog_newick.txt")
 
 # Convert multiPhylo to a list of phylogenetic trees

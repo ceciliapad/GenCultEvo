@@ -1,13 +1,12 @@
-################################
-## Analyses cultural networks ##
-################################
+#################################
+## Analyses cultural diversity ##
+#################################
+
+# Code written by Cecilia Padilla-Iglesias
 
 source("utility_functions.R")
-require(MetBrewer)
+library(MetBrewer)
 
-load("SpatialCulture.RData")
-
-#require(wesanderson)
 my_pal <- c(MetPalettes$Isfahan1[[1]], MetPalettes$Isfahan2[[1]][2])
 
 #load data (the excel worksheets should be individually exported as .csv files)
@@ -23,7 +22,6 @@ m <- rowSums(music2, na.rm=T)
 write.csv(s, "results_masked/subsistence_counts.csv")
 write.csv(m, "results_masked/music_counts.csv")
 
-#pal <- wes_palette("Cavalcanti1", 11, type = "continuous")
 m <- as.data.frame(m)
 s <- as.data.frame(s)
 m$FID <- rownames(m)
@@ -48,12 +46,12 @@ png("results_masked/Subsistence_tools.png",units="in", width=7, height=5, res=50
 barplot(s$s, col=my_pal_long, names.arg=IDS, ylab="No. of different subsistence tools", ylim=c(0,30), cex.names=0.5, cex.axis=0.5 )
 dev.off()
 
-# Is there a correlation
+# Is there a correlation?
 all_reps <- cbind(m,s)
 cor.test(all_reps$m, all_reps$s, method="spearman")
 
 # load locations data
-locations <- read.csv("location_culture_centroids2.csv", row.names = 1)
+locations <- read.csv("location_culture_centroids.csv", row.names = 1)
 locations$FID <- rownames(locations)
 area_all <- merge(locations,m,by="FID")
 area_all <- merge(area_all,s,by="FID")
@@ -64,8 +62,8 @@ cor.test(area_all$Area, area_all$m, method="spearman")
 biome <- (read.csv("biomes2.csv", row.names = 1))/100
 
 # Maybe is not the % biome that dictates whether you have an object but simply whether
-# that biome is present
-biome_bin <- read.csv("biomes2.csv", row.names = 1)
+# that biome is present - so make biome a binary variable (NOT USED IN MAIN TEXT)
+biome_bin <- read.csv("culture_biomes.csv", row.names = 1)
 biome_bin <- ifelse(biome_bin>0,1,0)
 
 # Read in genetic distances and turn into distance object
@@ -81,32 +79,6 @@ Fst_mat_Bantu<- read.csv("fst_bantu.csv", row.names = 1)[-9,-9]
 colnames(Fst_mat_Bantu) <- rownames(Fst_mat_Bantu)
 genDistBantu <- as.dist(Fst_mat_Bantu)
 
-# Read in sampling_effort file
-
-samples <- read.csv("sampling_effort.csv", row.names = 1)
-
-samples[is.na(samples)] <- 0
-samples <- samples %>% mutate_if(is.numeric, ~1 * (. != 0))
-
-samples_group <- as.data.frame(rowSums(samples))
-samples_group$FID <- rownames(samples)
-
-write.csv(samples_group, "results_masked/sources_per_group.csv")
-write.csv(samples, "results_masked/sample_list.csv")
-samples_all_info_het <- merge(het_all,samples_group,by="FID")
-samples_all_info_hom <- merge(div_all,samples_group,by="FID")
-samples_all_info_area <- merge(area_all,samples_group,by="FID")
-
-reg_hom_music <- lm(samples_all_info_hom$m~log(samples_all_info_hom$`rowSums(samples)`)+samples_all_info_hom$mean_hom)
-reg_hom_subsistence <- lm(samples_all_info_hom$s~log(samples_all_info_hom$`rowSums(samples)`)+samples_all_info_hom$mean_hom)
-
-reg_area_subsistence <- lm(samples_all_info_area$s~log(samples_all_info_area$`rowSums(samples)`)+log(samples_all_info_area$Area))
-reg_area_music <- lm(samples_all_info_area$m~log(samples_all_info_area$`rowSums(samples)`)+log(samples_all_info_area$Area))
-
-reg_area_subsistence <- lm(samples_all_info_area$s~samples_all_info_area$Area)
-
-
-#samples <- do.call(cbind,lapply(split(as.list(samples),names(samples)),function(x) Reduce(`+`,x)));
 ####################
 # Data Preparation #
 ####################
@@ -183,7 +155,7 @@ dev.off()
 ## Data prep 2.0 ##
 ###################
 
-# Create reduced distance objects for subsequent analyses without Batwa West
+# Create reduced distance objects for subsequent analyses without Batwa West as no genetic data for them
 locations_red <- locations[-7,]
 biome_red <- biome[-7,]
 biome_bin_red <- biome_bin[-7,]
@@ -407,13 +379,6 @@ music_matrix<- cbind(music_matrix, pval_adj_mus)
 
 write.csv(rbind(music_matrix, subsistence_matrix), "results_masked/m_matrix_repertoires.csv")
 
-
-#save.image("SpatialCulture.RData")
-#table_res[,1:4]
-
-# Plot correlations
-reps_df <- read.csv("repertoire_mantel_plot.csv")
-c <- ggplot(data = reps_df, aes(response, explanatory, fill = r2_adj))
 
 #####################################################################
 ## Principal Coordinates Analysis (PCoA) of Tools, Music and Genes ##

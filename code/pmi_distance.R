@@ -3,6 +3,7 @@
 library(dplyr)
 library(reshape2)
 
+# Read dataset as downloaded from ASJP website: https://asjp.clld.org/download
 data <- read.csv("pmiWorld.csv")
 data <- as.matrix(data)
 rows <- data[,"X"]
