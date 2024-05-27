@@ -4,7 +4,7 @@
 
 # Processed datasets not available for public distribution
 # Contact data administrators for acess (see Patin et al. 2017 and Jarvis et al. 2012)
-# Code to build the figures below
+# Code to build the figures below - adapted from Chiara Barbieri: https://github.com/chiarabarbieri/SNPs_HumanOrigins_Recipes/blob/master/BEAGLEandIBD/plotIBD.r
 
 ped=read.table("admix_combination_masked_bin.ped")
 ped_snps <- ped[,-c(1:6)]
